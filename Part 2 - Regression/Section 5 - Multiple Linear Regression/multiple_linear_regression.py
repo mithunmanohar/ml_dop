@@ -50,10 +50,8 @@ regressor.fit(X_train, y_train)
 
 y_pred = regressor.predict(X_test)
 
-# predicitng the test results
-plt.plot(y_test, y_pred)
-
 # building optimal model
+
 """
 Backward Elimination : 
     - Sometimes not all independant variables are not as statistically 
@@ -212,7 +210,7 @@ to the dependant Variable
 
 """
 
-X_opt = X[:, [0 , 3]]
+X_opt = X[:, [0, 3]]
 
 
 regressor_OLS = sm.OLS(endog=y, exog=X_opt).fit()
@@ -225,17 +223,4 @@ const       4.903e+04   2537.897     19.320      0.000    4.39e+04    5.41e+04
 x1             0.8543      0.029     29.151      0.000       0.795       0.913
 ==============================================================================
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
 
