@@ -50,5 +50,28 @@ regressor.fit(X_train, y_train)
 
 y_pred = regressor.predict(X_test)
 
+# predicitng the test results
+plt.plot(y_test, y_pred)
 
+# building optimal model
+"""
+Backward Elimination : 
+    - Sometimes not all independant variables are not as statistically 
+    significant as others. Some has great impact/ effect on the dependant 
+    variables, butothers might have less impact.
+    - So even if we remove the non-statistically significant variables, we may 
+    get very good predictions.
+    - The goal here is to find an optimal team of independant variables, so
+    that each independant variable of the team has a great impact on the 
+    dependant variable.
+    - ie each independant variable is a strong predictor of dependant variable
+    and is statistically significant.
+    - This can be positive - increase in 1 unit of independant variable : the 
+    dependant variable increase or it can be negative.
+    
+    
+"""
 
+# backward elimination preperation
+
+# backward elimination
